@@ -136,3 +136,43 @@ for i in range(row):
         print("*", end=" ")
     print()
 
+
+
+
+#10. find runner up score in a list
+n = int(input("Enter the number of participants: "))
+scores = list(map(int, input("Enter the scores separated by space: ").split(",")))
+unique_scores = list(set(scores))
+unique_scores.sort(reverse=True)
+runner_up_score = unique_scores[1]
+print("Runner-up score:", runner_up_score)
+
+
+
+
+
+
+
+#11. merge two dictonaries
+dict1={"a":96,"b":69}
+dict2={"b":88,"c":25}
+dict={**dict1,**dict2}
+print(dict)
+
+
+
+
+
+
+
+#12. find longest word in the list
+list=[]
+n=int(input("Enter Number of elements for list : "))
+for i in range(n):
+    element = input("Enter Elements : ")
+    list.append(element)   
+longest=""
+for j in list:
+    if(len(j)>len(longest)):
+        longest=j
+print("The longest string is ",longest," and it's length is ",len(longest))
